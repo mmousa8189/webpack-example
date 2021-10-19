@@ -3,13 +3,27 @@
   "version": "1.0.0",
   "description": "Webpack Example Description",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mmousa8189/webpack-example"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack serve --mode development",
     "build": "webpack --mode production"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "webpack",
+    "playground",
+    "create",
+    "simple",
+    "project"
+  ],
+  "author": {
+    "name": "Mohame Mousa",
+    "email": "mohamedamousa00@gmail.com",
+    "url": "http://mohamedmousa.com/"
+  },
   "license": "ISC",
   "devDependencies": {
     "html-webpack-plugin": "^5.3.1",
