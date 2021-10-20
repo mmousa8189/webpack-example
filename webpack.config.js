@@ -10,6 +10,23 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
+  module: {
+    rules: [
+      {
+        //which describes what kind of files should be transformed.
+        test: /\.js$/,
+        //which defines the files that shouldn’t be processed from the loader(s), if we have such.
+        exclude: /node_modules/,
+        //which tells which loader(s) should be used against the matched modules. Here, we can also set the loader options, as we’ve just done with the presets option.
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"],
+          },
+        },
+      },
+    ],
+  },
   plugins: [
     new HtmlWebpackPlugin({
       hash: true,
