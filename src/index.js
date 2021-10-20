@@ -1,6 +1,7 @@
 import panzoom from "panzoom";
 import flicking from "@egjs/flicking";
 import commponent from "./component";
+import "./style.css";
 
 document.body.appendChild(commponent());
 console.log(panzoom);
